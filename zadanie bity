@@ -35,11 +35,14 @@ int main() {
     cin >> a ;
     cout << "Podaj b:\n";
     cin >> b ;
+    cout<<"\n";
     
-	  printBits( a );
-	  cout<<"\n";
-	  printBits( b );
-	  cout<<"\n\n";
+	printBits( a );
+	cout << " (" << a << ")\n";
+	cout<<"\n";
+	printBits( b );
+	cout << " (" << b << ")\n";
+	cout<<"\n\n";
 	    
     showOperation( a, b, a | b, '|' );
     showOperation( a, b, a & b, '&' );
@@ -49,8 +52,10 @@ int main() {
     cout << "wynik  = " << wynik << endl;
     wynik = false || true;
     cout << "wynik  = " << wynik << endl;
+    wynik = true || false;
+    cout << "wynik  = " << wynik << endl;
     wynik = true || true;
-    cout << "wynik = " << wynik << endl;
+    cout << "wynik  = " << wynik << endl;
     cout<<"\n";
     
     printBits( a );
